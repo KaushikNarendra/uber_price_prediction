@@ -9,7 +9,7 @@ import numpy as np
 import os
 
 # App title
-st.title("Uber Price Prediction using ML by Kaushik Rand")
+st.title("Uber Price Prediction using ML by Kaushik Narendra")
 
 # Load dataset
 @st.cache_data
@@ -53,4 +53,5 @@ input_scaled = scaler.transform(input_data)
 if st.sidebar.button("Predict Uber Price"):
     price = model.predict(input_scaled)[0]
     st.success(f"Predicted Uber Price: ₹{price:.2f}")
+
 
